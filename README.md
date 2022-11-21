@@ -59,27 +59,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  - Tekst word niet gelezen alleen interactieve elementen
+  - Ineteractieve elementen werd goed voorgelezen en werd verteld wat je er mee kan
+  - Duidelijke volgorde
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Met de tap functie, krijgen knoppen een blauwe rand ook knoppen die al blauw zijn dit is niet duidelijk
+  - Logische volgorde 
+  - Iphone specificaties tabel gaat verticaal ipv horzontaal
+  - footnote is ook klikbaar door op enter te drukken
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Was geen obstakel, kon de website gewoon gebruiken zoals normaal
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - kleurenblind, contrast blijft goed met verschillende vormen van kleurenblindheid heb ik dit getest: Ortitanapia, Protanopia, Peuteranopie
+- bril, grote tekst is nog wel leesbaar kleine tekst valt weg. Afbeeldingen zijn nog wel zichtbaar maar niet in detail. Footer is niet te lezen.
 
 </details>
 
@@ -91,7 +88,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
