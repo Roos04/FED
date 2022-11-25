@@ -114,11 +114,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Katrina     | Danisha         | Splinter    | Roos        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | css selectors  | link button             | z-index    | plaatjes makkelijk positioneren en vergroten   |
+  |fonts | spans | list bewerken| details summary voor footer|
+  | ...            | ...                | ...          | custom properties             |
 
 
   ### Verslag van meeting

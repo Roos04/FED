@@ -2,25 +2,36 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+	box-sizing:border-box;  
 }
 
 button, summary {
 	cursor: pointer;
 }
 
+img{
+	display: block;
+	width: 100%;
+}
+body {
+	margin: 0em;
+	padding: 0em;
+  }
 
-
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
 
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-:root {
-	/* startje */
+
+/*:root {
+	startje 
 	--color-text:#111;
 	--color-background:#eee;
-}
+}*/
 
 
 
@@ -31,4 +42,114 @@ button, summary {
 /****************/
 
 /* jouw code */
+@font-face {
+	font-family:SFR;
+	src: url(fonts/SF-Pro-Text-Regular.otf);
+}
+nav{
+	background-color:rgba(29, 29, 31);
+	position : fixed;
+	padding: 0em 1em; 
+	height: 17em;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: none;
+}
+nav ul{
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul li a img{
+	width: 1em;
+}
+
+nav ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+h1 {
+	font-family:SFR, Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	line-height: 1.125;
+	font-weight: 600;
+	letter-spacing: .004em;
+	color: white;
+  }
+  
+  h2 {
+	font-family: SFR, Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+  }
+  
+  p,a{
+	font-family: SFR, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+    line-height: 1.21053;
+    font-weight: 400;
+  }
+
+  a{
+	color:#06c;
+  }
+
+
+main section,
+header section{
+	text-align: center;
+	padding-top: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section img{
+	text-align: center
+}
+
+header section:first-of-type {
+	/* padding-top: 20em;*/
+	background-color: black;
+	color: white;
+}
+header section p{
+	color: #6e6e73;
+}
+main section:nth-of-type(1),
+main section:nth-of-type(3),
+main section:nth-of-type(6),
+main section:nth-of-type(8)
+{
+	background-color: #fbfbfd;
+	color: #1d1d1f;
+}
+
+main section:nth-of-type(2),
+main section:nth-of-type(4),
+main section:nth-of-type(5),
+main section:nth-of-type(7)
+{
+	background-color: black;
+	color: white;
+}
+
+main section p a{
+	margin-left: 1em;
+	margin-right: 1em;	
+}
+main section p img {
+	width: 3em;
+}
+
+main section:nth-of-type(7) p:first-of-type{
+	display: flex;
+    align-items: center;
+}
+
+
+
 
