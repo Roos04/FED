@@ -1,6 +1,4 @@
-/**************/
 /* CSS REMEDY */
-/**************/
 *, *::after, *::before {
 	box-sizing:border-box;  
 }
@@ -11,7 +9,7 @@ button, summary {
 
 img{
 	display: block;
-	width: 100%;
+	max-width: 100%;
 }
 body {
 	margin: 0em;
@@ -23,133 +21,316 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*********************/
 /* CUSTOM PROPERTIES */
-/*********************/
-
-/*:root {
-	startje 
-	--color-text:#111;
-	--color-background:#eee;
-}*/
-
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
+:root { 
+	--navigatie-background: rgba(29, 29, 31, 0.97);
+	--primaire-kleur:black;
+	--secondary-kleur: white;
+	--light-sectionbackground: #fbfbfd;
+	--link-kleur:#06c;
+	--ptekstkleur:#6e6e73;
+	--footer-background: #f5f5f7;
+	--footer-atekstkleur: #424245;
+	--footer-border-kleur: #d2d2d7;
+}
 
 /* jouw code */
 @font-face {
 	font-family:SFR;
 	src: url(fonts/SF-Pro-Text-Regular.otf);
 }
-nav{
-	background-color:rgba(29, 29, 31);
-	position : fixed;
-	padding: 0em 1em; 
-	height: 17em;
-	top: 0;
-	right: 0;
-	left: 0;
-	display: none;
-}
-nav ul{
-	display: flex;
-	flex-direction: column;
-}
 
-nav ul li a img{
-	width: 1em;
-}
+/* NAVIGATIE */
 
-nav ul li a{
-	color: white;
-	text-decoration: none;
-}
-
-h1 {
-	font-family:SFR, Arial, Helvetica, sans-serif;
-	font-size: 2em;
-	line-height: 1.125;
-	font-weight: 600;
-	letter-spacing: .004em;
-	color: white;
-  }
+header {
+max-height:3em;
+  padding:0 1em;
+  line-height:1; 
+  background-color: var(--navigatie-background);
   
-  h2 {
-	font-family: SFR, Arial, Helvetica, sans-serif;
-	font-size: 2em;
-	line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: .004em;
-  }
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
   
-  p,a{
-	font-family: SFR, Arial, Helvetica, sans-serif;
-	font-size: 1em;
-    line-height: 1.21053;
-    font-weight: 400;
-  }
+  position:sticky;
+  top:0;
+}
 
-  a{
-	color:#06c;
-  }
+/* alle links in de header */
+nav a {
+  padding:.5em 0;
+  color: white;
+  text-decoration:none;
+}
 
+/* BUTTONS */
+header button {
+  padding:.5em;
+  background-color: #ffffff00;
+  border:none;
+}
 
-main section,
-header section{
+header img{
+	height:4em;
+}
+
+header button img{
+  height:1.5em;
+}
+
+/* HAMBURGERMENU BUTTON */
+header > button {
+  order:-1;
+}
+
+/* SLUIT BUTTON */
+nav button {
+ justify-self:start;
+}
+
+/* HET MENU */
+nav {
+  padding:1em;
+  display:grid;
+  align-content:start;
+  gap:1em;
+  background-color: var(--primaire-kleur);
+  
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  
+  transform:translatey(-100%);
+  
+  transition:transform .3s;
+}
+
+nav.toonMenu {
+  transform:translatex(0);
+}
+
+/* LIJST MET LINKS */
+nav ul { 
+  margin:2em; 
+  padding:0em;
+  list-style:none;
+}
+
+/* EEN LINK IN DE LIJST */
+nav a {
+  display:flex;
+  border-bottom:solid 1px var(--secondary-kleur);
+}
+
+/* MAIN beide */
+main section{
 	text-align: center;
 	padding-top: 2em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-section img{
-	text-align: center
+
+p,a{
+	font-family: SFR, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+    line-height: 1.21053;
 }
 
-header section:first-of-type {
-	/* padding-top: 20em;*/
-	background-color: black;
-	color: white;
+a{
+	color: var(--link-kleur);
+	text-decoration: none;
 }
-header section p{
+
+
+/* MAIN 1e pagina */
+
+.home-pagina h1 {
+	font-family:SFR, Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	line-height: 1.125;
+	letter-spacing: .004em;
+	color: var(--secondary-kleur);
+}
+
+.home-pagina h2 {
+	font-family: SFR, Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	line-height: 1.125;
+    letter-spacing: .004em;
+}
+
+.home-pagina section img{
+	width: 90%;
+}
+
+.home-pagina main section h2 img{
+	width: 100%;
+}
+
+
+.home-pagina main section:first-of-type p{
 	color: #6e6e73;
 }
-main section:nth-of-type(1),
-main section:nth-of-type(3),
-main section:nth-of-type(6),
-main section:nth-of-type(8)
+
+.home-pagina main section:nth-of-type(2),
+.home-pagina main section:nth-of-type(4),
+.home-pagina main section:nth-of-type(7),
+.home-pagina main section:nth-of-type(9)
 {
-	background-color: #fbfbfd;
-	color: #1d1d1f;
+	background-color: var(--light-sectionbackground);
+	color: var(--primaire-kleur);
 }
 
-main section:nth-of-type(2),
-main section:nth-of-type(4),
-main section:nth-of-type(5),
-main section:nth-of-type(7)
+.home-pagina main section:first-of-type,
+.home-pagina main section:nth-of-type(3),
+.home-pagina main section:nth-of-type(5),
+.home-pagina main section:nth-of-type(6),
+.home-pagina main section:nth-of-type(8)
 {
-	background-color: black;
-	color: white;
+	background-color: var(--primaire-kleur);
+	color:var(--secondary-kleur) ;
 }
 
-main section p a{
+.home-pagina main section p a{
 	margin-left: 1em;
 	margin-right: 1em;	
 }
-main section p img {
+.home-pagina main section p img {
 	width: 3em;
 }
 
-main section:nth-of-type(7) p:first-of-type{
+.home-pagina main section:nth-of-type(8) p:first-of-type{
 	display: flex;
     align-items: center;
 }
 
+/* MAIN 2e pagina */
+.iphone main section:nth-of-type(2),
+.iphone main section:nth-of-type(4){
+	background-color: var(--light-sectionbackground);
+	color: var(--primaire-kleur);
+}
 
+.iphone main section:nth-of-type(3)
+{
+	background-color: var(--primaire-kleur);
+	color:var(--secondary-kleur) ;
+}
+.iphone section:nth-of-type(2) h2,
+.iphone section:nth-of-type(3) h2{
+	font-family: SFR, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.125;
+    letter-spacing: .004em;
+}
+
+.iphone section:nth-of-type(2) h3,
+.iphone section:nth-of-type(3) h3,
+.iphone section:nth-of-type(4) h3{
+	font-family:SFR, Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+    -webkit-background-clip: text;
+    color: transparent;
+	margin: 0.4em;
+}
+.iphone section:nth-of-type(2) h3{
+	background-image: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+}
+
+.iphone section:nth-of-type(3) h3{
+	background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+}
+
+.iphone section:nth-of-type(4) h3{
+background-image: linear-gradient(90deg,#1e3791 0%,#2948b1 40%,#3153c6 55%,#385fda 60%);
+}
+
+.iphone section p:first-of-type{
+	color: var(--ptekstkleur);
+	font-size: 0.75em;
+}
+
+.iphone main section a:first-of-type{
+	background-color: var(--link-kleur);
+	color: white;
+	padding: 0.5em 1em;
+	border-radius: 62em;
+	margin:0.5em;
+}
+
+.iphone main section a:nth-of-type(2){
+	margin: 1em
+}
+
+/* FOOTER */
+footer{
+	background-color: var(--footer-background);
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 0.75em;
+
+}
+footer p{
+	padding-top: 1em;
+	padding-bottom: 0.7em;
+	color: var(--ptekstkleur);
+	line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+}
+
+footer a{
+	color: var(--footer-atekstkleur);
+	text-decoration: none;
+}
+
+footer ul {
+	padding-left: 0px;
+
+}
+footer ul li { 
+	border-right: 1px solid var(--footer-border-kleur);
+	margin-right: 7px;
+	padding-right: 10px;
+	display: inline-block;
+	margin-top: 5px;
+	white-space: nowrap;
+}
+
+
+/* styling voor de header als de browser minimaal breedte is */
+@media (min-width:57em) {
+	header > button {
+	  display:none;
+  }
+	
+  nav {
+	  position:static;
+	  transform:none;
+	  padding:0;  
+	  background:none;
+  }
+	
+	nav button {
+	  display:none;
+  }
+	
+	nav ul {
+	  display:flex;
+	  gap:1em;
+  }
+	
+	nav a {
+	  flex-direction:column;
+	  border:none;
+  }
+	
+	header > a:last-of-type {
+	  flex-direction:column;
+  }
+  }
 
 

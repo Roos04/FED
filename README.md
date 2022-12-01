@@ -117,17 +117,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Katrina     | Danisha         | Splinter    | Roos        |
   | ---            | ---                | ---          | ---              |
   | css selectors  | link button             | z-index    | plaatjes makkelijk positioneren en vergroten   |
-  |fonts | spans | list bewerken| details summary voor footer|
-  | ...            | ...                | ...          | custom properties             |
+  |fonts | spans | list bewerken|custom properties gebruiken?|
+
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - De afbeeldingen hebben om het object een groot vlak zwart of wit, het best kan ik de afbeeldingen bijsnijden zodat alleen het object op de afbeelding staat.
+  - Custom properties moet ik gebruiken in mijn css. Dit doe ik door een eigenschap aan te maken in de :root. Dit doe je door -- en dan de naar waarover de eigenschap gaat. Vervolgens kan je de eignschap aanroepen met “var”.
 
 </details>
 
@@ -149,7 +147,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | dit bespreken  | en dit             | en ik dit    |details summary voor footer|
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
