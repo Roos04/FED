@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Apple: https://www.apple.com/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
- Home pagina apple  
+  <p>Home pagina apple</p> 
   <img src="images/apple_homepagina.png" width="375px" alt="home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  iPhone pagina 
+  <p>iPhone pagina</p>
   <img src="images/apple_iphone.png" width="375px" alt="iphone pagina">
  
 </details>
@@ -91,7 +91,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### scroll iphones: 
-  <img src="images/Aplle scrol iphone.jpg" width="375px" alt="apple scrol iphone">
+  <img src="images/Apple scrol iphone.jpg" width="375px" alt="apple scrol iphone">
 
   ### footer: 
   <img src="images/Apple footer.jpg" width="375px" alt="apple footer">
