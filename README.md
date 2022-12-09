@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Apple: https://www.apple.com/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="images/apple_homepagina.png" width="375px" alt="omschrijving van de pagina">
+ Home pagina apple  
+  <img src="images/apple_homepagina.png" width="375px" alt="home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="images/apple_iphone.png" width="375px" alt="omschrijving van de pagina">
+  iPhone pagina 
+  <img src="images/apple_iphone.png" width="375px" alt="iphone pagina">
  
 </details>
 
@@ -90,11 +90,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
   <img src="images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### scroll iphones: 
+  <img src="images/Aplle scrol iphone.jpg" width="375px" alt="apple scrol iphone">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### footer: 
+  <img src="images/Apple footer.jpg" width="375px" alt="apple footer">
 
 </details>
 
@@ -131,8 +131,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Voortgang 2 (week 3)
 
 <details>
@@ -145,20 +143,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Splinter      | Danisha          | Katrina    | Roos       |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    |details summary voor footer|
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Niet aanwezig  | hulp nodig met css             | css kort opschrijven     |details summary voor footer|
+  |  |  | |scroll in css|
+  |             |                 |           | scroll iphones werkt niet wat doe ik verkeert?              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - De student assistent heeft een 1 keer voor gedaan hoe je een detail en summary maakt in html. Ik begreep dit en ga ik verder mee voor me hele footer. 
+  - om de ul stond een section waardoor de section ging scrollen en niet de ul zelf de section heb ik hiervoor weg gehaald. Daarnaast heb ik een 	z-index: -1 moeten toevoegen anders waren de plaatjes van de li's zichtbaar in me naviagtie als je die uitklapte. De uitwerking in css:
+  <img src="images/css apple scrol iphone.jpg" width="375px" alt="apple scroll code css">
+
 
 </details>
 
@@ -202,7 +200,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
 ## Voortgang 3 (week 4)
 
 <details>
@@ -215,7 +212,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Splinter     | Danisha         | Katrina   | Roos        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
@@ -266,10 +263,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Navigatie html css en JS:  https://codepen.io/shooft/live/GRxXboQ 
+  2. Scrol bar iPhone pagina html en css:  https://codepen.io/shooft/pen/qBZPdGm?editors=1100 
+  3. Grid iphones html en css: https://codepen.io/robertspier/pen/oNyPEmv?editors=0100
+  4. Footer details en summary css: https://codepen.io/robertspier/pen/NWMapEM?editors=0110 
+  5. Footer details en summary responsive css en JS: https://codepen.io/robertspier/pen/GRGzYEG?editors=0110
 
 </details>

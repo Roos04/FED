@@ -20,7 +20,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
-
 /* CUSTOM PROPERTIES */
 :root { 
 	--navigatie-background: rgba(29, 29, 31, 0.97);
@@ -41,7 +40,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* NAVIGATIE */
-
 header {
 max-height:3em;
   padding:0 1em;
@@ -105,6 +103,7 @@ nav {
   transform:translatey(-100%);
   
   transition:transform .3s;
+  z-index: 5;
 }
 
 nav.toonMenu {
@@ -133,7 +132,7 @@ main section{
 	align-items: center;
 }
 
-p,a{
+p,a,ol{
 	font-family: SFR, Arial, Helvetica, sans-serif;
 	font-size: 1em;
     line-height: 1.21053;
@@ -143,6 +142,9 @@ a{
 	color: var(--link-kleur);
 	text-decoration: none;
 }
+main a:hover, footer a:hover{
+	text-decoration:underline;
+  }
 
 
 /* MAIN 1e pagina */
@@ -171,14 +173,14 @@ a{
 }
 
 
-.home-pagina main section:first-of-type p{
+.home-pagina main>section:first-of-type p{
 	color: #6e6e73;
 }
 
 .home-pagina main section:nth-of-type(2),
 .home-pagina main section:nth-of-type(4),
-.home-pagina main section:nth-of-type(7),
-.home-pagina main section:nth-of-type(9)
+.home-pagina main #section section:nth-of-type(2),
+.home-pagina main #section section:nth-of-type(4)
 {
 	background-color: var(--light-sectionbackground);
 	color: var(--primaire-kleur);
@@ -187,8 +189,8 @@ a{
 .home-pagina main section:first-of-type,
 .home-pagina main section:nth-of-type(3),
 .home-pagina main section:nth-of-type(5),
-.home-pagina main section:nth-of-type(6),
-.home-pagina main section:nth-of-type(8)
+.home-pagina main #section section:first-of-type,
+.home-pagina main #section section:nth-of-type(3)
 {
 	background-color: var(--primaire-kleur);
 	color:var(--secondary-kleur) ;
@@ -202,49 +204,88 @@ a{
 	width: 3em;
 }
 
-.home-pagina main section:nth-of-type(8) p:first-of-type{
+.home-pagina main #section section:nth-of-type(3) p:first-of-type{
 	display: flex;
     align-items: center;
 }
 
 /* MAIN 2e pagina */
-.iphone main section:nth-of-type(2),
-.iphone main section:nth-of-type(4){
+ /* https://codepen.io/shooft/pen/qBZPdGm?editors=1100*/
+.iphone main ul:first-of-type {
+	display:flex;
+	overflow-x:auto;
+	list-style:none;
+	align-items: center;
+	padding: 0.5em;
+	z-index: -1;
+	background-color: var(--light-sectionbackground);
+	margin: 0em;
+	justify-content: space-between;
+}
+
+.iphone main ul:first-of-type li{
+	font-size: 0.7em;
+	line-height: 1.3333733333;
+	margin-left:0.5em;
+	margin-right:0.5em;
+	color: var(--primaire-kleur);
+	font-family:SFR, Arial, Helvetica, sans-serif;
+	flex-shrink:0;
+	align-items:center;
+	white-space: nowrap;
+	display: flex;
+    flex-flow: column nowrap;
+}
+
+.iphone main ul:first-of-type li:hover{
+	color: var(--link-kleur);
+}
+.iphone main ul:first-of-type li img{
+	width: 60%;
+}
+
+.iphone main section:first-of-type{
+	background-color: var(--secondary-kleur);
+	color: var(--primaire-kleur);
+}
+
+.iphone main section:nth-of-type(3){
 	background-color: var(--light-sectionbackground);
 	color: var(--primaire-kleur);
 }
 
-.iphone main section:nth-of-type(3)
+.iphone main section:nth-of-type(2)
 {
 	background-color: var(--primaire-kleur);
 	color:var(--secondary-kleur) ;
 }
-.iphone section:nth-of-type(2) h2,
-.iphone section:nth-of-type(3) h2{
+.iphone section:first-of-type h2,
+.iphone section:nth-of-type(2) h2{
 	font-family: SFR, Arial, Helvetica, sans-serif;
 	font-size: 1.2em;
 	line-height: 1.125;
     letter-spacing: .004em;
 }
 
+.iphone section:first-of-type h3,
 .iphone section:nth-of-type(2) h3,
-.iphone section:nth-of-type(3) h3,
-.iphone section:nth-of-type(4) h3{
+.iphone section:nth-of-type(3) h3{
 	font-family:SFR, Arial, Helvetica, sans-serif;
 	font-size: 2.5em;
     -webkit-background-clip: text;
+	background-clip: text;
     color: transparent;
 	margin: 0.4em;
 }
-.iphone section:nth-of-type(2) h3{
+.iphone section:first-of-type h3{
 	background-image: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
 }
 
-.iphone section:nth-of-type(3) h3{
+.iphone section:nth-of-type(2) h3{
 	background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
 }
 
-.iphone section:nth-of-type(4) h3{
+.iphone section:nth-of-type(3) h3{
 background-image: linear-gradient(90deg,#1e3791 0%,#2948b1 40%,#3153c6 55%,#385fda 60%);
 }
 
@@ -260,16 +301,60 @@ background-image: linear-gradient(90deg,#1e3791 0%,#2948b1 40%,#3153c6 55%,#385f
 	border-radius: 62em;
 	margin:0.5em;
 }
+.iphone main section a:first-of-type:hover{
+	text-decoration:none;
+}
 
 .iphone main section a:nth-of-type(2){
 	margin: 1em
 }
 
+
+/* grid 4 iphones*/
+.iphone main section:nth-of-type(4){
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: .25em;
+}
+.iphone main section:nth-of-type(4) h2{
+	font-family: SFR, Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+}
+
+.iphone main section:nth-of-type(4) p  {
+	font-family: SFR, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: var(--primaire-kleur);
+}
+
+.iphone main section:nth-of-type(4) article{
+	justify-self: center;
+	display: flex;
+    flex-direction: column;
+}
+
+.iphone main section:nth-of-type(4) article h2{
+	padding-top: 1.2em;
+}
+
+.iphone main section:nth-of-type(4) article:nth-of-type(4) h2{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.iphone main section:nth-of-type(4) article:nth-of-type(4) h2 img{
+	width: 1em;
+}
+
+
 /* FOOTER */
 footer{
 	background-color: var(--footer-background);
-	padding-left: 1em;
-	padding-right: 1em;
+	padding-left: 5em;
+	padding-right: 5em;
+	padding-top: 2em;
+	padding-bottom: 2em;
 	font-size: 0.75em;
 
 }
@@ -281,17 +366,68 @@ footer p{
     font-weight: 400;
     letter-spacing: -.01em;
 }
-
-footer a{
+footer p a{
 	color: var(--footer-atekstkleur);
 	text-decoration: none;
 }
-
-footer ul {
-	padding-left: 0px;
-
+footer section:first-of-type details summary{
+	font-family: SFR, Arial, Helvetica, sans-serif;
 }
-footer ul li { 
+
+footer section:first-of-type details summary:hover{
+	color: var(--primaire-kleur);
+}
+
+footer section:first-of-type details summary{
+	padding: 10px 0px;
+	border-bottom: 1px solid var(--footer-border-kleur);
+}
+
+/* https://codepen.io/robertspier/pen/NWMapEM?editors=0110 */
+/* details en summary */
+footer section:first-of-type details > summary {
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer section:first-of-type details > summary::after {
+	content: "+";
+	margin-left: auto;
+}
+
+footer section:first-of-type details[open] > summary::after {
+	transform: rotate(45deg);
+}
+
+footer section:first-of-type summary::-webkit-details-marker {
+	display: none;
+}
+
+footer section:first-of-type details summary, 
+footer section:first-of-type ul li a{
+color: var(--ptekstkleur);
+}
+
+footer section:first-of-type ul {
+	padding-left: 1em;
+}
+
+footer section:first-of-type ul li {
+	list-style:none;
+	margin: 0.5em;
+}
+
+footer section:last-of-type p a{
+	color: var(--link-kleur);
+	text-decoration: none;
+}
+
+footer section:last-of-type ul {
+	padding-left: 0px;
+}
+
+footer section:last-of-type ul li { 
 	border-right: 1px solid var(--footer-border-kleur);
 	margin-right: 7px;
 	padding-right: 10px;
@@ -300,8 +436,29 @@ footer ul li {
 	white-space: nowrap;
 }
 
+footer ol{
+	color: var(--ptekstkleur);
+}
 
-/* styling voor de header als de browser minimaal breedte is */
+footer ol li{
+	margin-top: 1.5em;
+}
+
+footer ol li a{
+	color: var(--footer-atekstkleur);
+}
+
+/* home-pagina section 4 blokken responsive*/
+ @media (min-width:45em) {
+
+	#section{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.2em;
+	}
+}
+
+/* navigatie responsive */
 @media (min-width:57em) {
 	header > button {
 	  display:none;
@@ -327,10 +484,53 @@ footer ul li {
 	  flex-direction:column;
 	  border:none;
   }
+
+}
+
+/* footer responsive */
+
+ @media (min-width:66em){
+
+	footer > section:first-of-type{
+		display: flex;
+		flex-direction: row;
+		gap: 1em;
+	}
+	/* details en summary responsive */
+	/* https://codepen.io/robertspier/pen/GRGzYEG?editors=0110 */
+	/* Disable click on desktop by removing pointer events */
+	footer section:first-of-type details {
+		pointer-events: none;
+	}
 	
-	header > a:last-of-type {
-	  flex-direction:column;
-  }
-  }
+	 /* Hide the arrow on desktop */
+	 footer section:first-of-type details > summary {
+	  list-style: none;
+	  white-space: nowrap;
+	}
+
+	footer section:first-of-type details > summary::-webkit-details-marker {
+	  display: none;
+	}
+
+	footer section:first-of-type details > summary::after {
+		content: "";
+	}
+
+	footer section:first-of-type details ul {
+		padding-left: 0;
+	}
+}
+
+	
+
+
+/* grid responsive */
+@media (min-width:66em){
+	.iphone main section:nth-of-type(4){
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
 
 
