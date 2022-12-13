@@ -7,6 +7,10 @@ button, summary {
 	cursor: pointer;
 }
 
+:focus{
+	outline: 0.25em solid crimson;
+}
+
 img{
 	display: block;
 	max-width: 100%;
@@ -30,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 	--ptekstkleur:#6e6e73;
 	--footer-background: #f5f5f7;
 	--footer-atekstkleur: #424245;
-	--footer-border-kleur: #d2d2d7;
+	--border-kleur: #d2d2d7;
 }
 
 /* jouw code */
@@ -179,22 +183,27 @@ main a:hover, footer a:hover{
 
 .home-pagina main section:nth-of-type(2),
 .home-pagina main section:nth-of-type(4),
-.home-pagina main #section section:nth-of-type(2),
-.home-pagina main #section section:nth-of-type(4)
+.home-pagina main .section section:nth-of-type(2),
+.home-pagina main .section section:nth-of-type(4)
 {
 	background-color: var(--light-sectionbackground);
 	color: var(--primaire-kleur);
 }
 
-.home-pagina main section:first-of-type,
+.home-pagina main > section:first-of-type,
 .home-pagina main section:nth-of-type(3),
 .home-pagina main section:nth-of-type(5),
-.home-pagina main #section section:first-of-type,
-.home-pagina main #section section:nth-of-type(3)
+.home-pagina main .section section:first-of-type,
+.home-pagina main .section section:nth-of-type(3)
 {
 	background-color: var(--primaire-kleur);
 	color:var(--secondary-kleur) ;
 }
+
+.home-pagina main > section:nth-of-type(4) img{
+	width: 60%;
+}
+
 
 .home-pagina main section p a{
 	margin-left: 1em;
@@ -204,13 +213,14 @@ main a:hover, footer a:hover{
 	width: 3em;
 }
 
-.home-pagina main #section section:nth-of-type(3) p:first-of-type{
+.home-pagina main .section section:nth-of-type(3) p:first-of-type{
 	display: flex;
     align-items: center;
 }
 
 /* MAIN 2e pagina */
  /* https://codepen.io/shooft/pen/qBZPdGm?editors=1100*/
+
 .iphone main ul:first-of-type {
 	display:flex;
 	overflow-x:auto;
@@ -224,27 +234,31 @@ main a:hover, footer a:hover{
 }
 
 .iphone main ul:first-of-type li{
+	flex-shrink:0;
+}
+
+.iphone main ul:first-of-type li a{
+	color: var(--primaire-kleur);
 	font-size: 0.7em;
 	line-height: 1.3333733333;
 	margin-left:0.5em;
 	margin-right:0.5em;
-	color: var(--primaire-kleur);
 	font-family:SFR, Arial, Helvetica, sans-serif;
-	flex-shrink:0;
 	align-items:center;
-	white-space: nowrap;
 	display: flex;
     flex-flow: column nowrap;
 }
 
-.iphone main ul:first-of-type li:hover{
+.iphone main ul:first-of-type li a:hover{
 	color: var(--link-kleur);
+	text-decoration: none;
 }
 .iphone main ul:first-of-type li img{
 	width: 60%;
+
 }
 
-.iphone main section:first-of-type{
+.iphone main > section:first-of-type{
 	background-color: var(--secondary-kleur);
 	color: var(--primaire-kleur);
 }
@@ -252,6 +266,10 @@ main a:hover, footer a:hover{
 .iphone main section:nth-of-type(3){
 	background-color: var(--light-sectionbackground);
 	color: var(--primaire-kleur);
+}
+
+.iphone main section:nth-of-type(3) > img:first-of-type{
+	max-width: 65%;
 }
 
 .iphone main section:nth-of-type(2)
@@ -277,6 +295,16 @@ main a:hover, footer a:hover{
     color: transparent;
 	margin: 0.4em;
 }
+.iphone main > h2{
+	font-family: SFR, Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	line-height: 1.125;
+    letter-spacing: .004em;
+	text-align: center;
+    margin-top: 2em;
+	margin-right: 1em;
+	margin-left: 1em;
+}
 .iphone section:first-of-type h3{
 	background-image: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
 }
@@ -289,7 +317,7 @@ main a:hover, footer a:hover{
 background-image: linear-gradient(90deg,#1e3791 0%,#2948b1 40%,#3153c6 55%,#385fda 60%);
 }
 
-.iphone section p:first-of-type{
+.iphone main section p:first-of-type{
 	color: var(--ptekstkleur);
 	font-size: 0.75em;
 }
@@ -314,7 +342,7 @@ background-image: linear-gradient(90deg,#1e3791 0%,#2948b1 40%,#3153c6 55%,#385f
 .iphone main section:nth-of-type(4){
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: .25em;
+	gap: 1em;
 }
 .iphone main section:nth-of-type(4) h2{
 	font-family: SFR, Arial, Helvetica, sans-serif;
@@ -328,9 +356,18 @@ background-image: linear-gradient(90deg,#1e3791 0%,#2948b1 40%,#3153c6 55%,#385f
 }
 
 .iphone main section:nth-of-type(4) article{
-	justify-self: center;
 	display: flex;
     flex-direction: column;
+	align-items: center;
+	border-bottom: 1px solid var(--border-kleur);
+	margin-bottom: 1em;
+}
+.iphone main section:nth-of-type(4) article img{
+	width: 50%;
+}
+
+.iphone main section:nth-of-type(4) article img:nth-of-type(2){
+	margin-top: 1em;
 }
 
 .iphone main section:nth-of-type(4) article h2{
@@ -370,6 +407,8 @@ footer p a{
 	color: var(--footer-atekstkleur);
 	text-decoration: none;
 }
+
+/* details en summary */
 footer section:first-of-type details summary{
 	font-family: SFR, Arial, Helvetica, sans-serif;
 }
@@ -380,11 +419,10 @@ footer section:first-of-type details summary:hover{
 
 footer section:first-of-type details summary{
 	padding: 10px 0px;
-	border-bottom: 1px solid var(--footer-border-kleur);
+	border-bottom: 1px solid var(--border-kleur);
 }
 
 /* https://codepen.io/robertspier/pen/NWMapEM?editors=0110 */
-/* details en summary */
 footer section:first-of-type details > summary {
 	cursor: pointer;
 	display: flex;
@@ -415,7 +453,7 @@ footer section:first-of-type ul {
 
 footer section:first-of-type ul li {
 	list-style:none;
-	margin: 0.5em;
+	margin: 0.6em;
 }
 
 footer section:last-of-type p a{
@@ -428,7 +466,7 @@ footer section:last-of-type ul {
 }
 
 footer section:last-of-type ul li { 
-	border-right: 1px solid var(--footer-border-kleur);
+	border-right: 1px solid var(--border-kleur);
 	margin-right: 7px;
 	padding-right: 10px;
 	display: inline-block;
@@ -449,13 +487,20 @@ footer ol li a{
 }
 
 /* home-pagina section 4 blokken responsive*/
- @media (min-width:45em) {
+ @media (min-width:46em) {
 
-	#section{
+	.section{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 1.2em;
 	}
+
+	.home-pagina main > section:nth-of-type(4){
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+
 }
 
 /* navigatie responsive */
@@ -492,8 +537,8 @@ footer ol li a{
  @media (min-width:66em){
 
 	footer > section:first-of-type{
-		display: flex;
-		flex-direction: row;
+		display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 		gap: 1em;
 	}
 	/* details en summary responsive */
@@ -503,7 +548,18 @@ footer ol li a{
 		pointer-events: none;
 	}
 	
-	 /* Hide the arrow on desktop */
+	footer section:first-of-type details summary{
+		border-bottom: none;
+		color: var(--primaire-kleur);
+		font-weight: bolder;
+		padding-bottom: 0px;
+	}
+
+	footer section:first-of-type details ul li{
+		margin-left: 0px;
+	}
+
+	/* Hide the arrow on desktop */
 	 footer section:first-of-type details > summary {
 	  list-style: none;
 	  white-space: nowrap;
@@ -520,17 +576,32 @@ footer ol li a{
 	footer section:first-of-type details ul {
 		padding-left: 0;
 	}
-}
 
-	
-
-
-/* grid responsive */
-@media (min-width:66em){
+	/* grid responsive */
 	.iphone main section:nth-of-type(4){
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.iphone main section:nth-of-type(4) article img{
+		width: 70%;
 	}
 }
+
+@media (min-width:70em){
+	
+		.iphone main section:nth-of-type(3){
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		.iphone main section:nth-of-type(3) > img:first-of-type{
+			max-width: 40%;
+		}
+
+	}
+
+
 
 

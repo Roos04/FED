@@ -1,4 +1,5 @@
-//https://codepen.io/shooft/live/GRxXboQ
+/*https://codepen.io/shooft/live/GRxXboQ*/
+
 
 /******************************/
 /* menu openen de MENU button */
@@ -38,7 +39,7 @@ function sluitMenu() {
 }
 
 
-// https://codepen.io/robertspier/pen/GRGzYEG?editors=0110
+/* https://codepen.io/robertspier/pen/GRGzYEG?editors=0110*/
 
 // Gebruik selectorAll ipv Selector om alle details in een variabele te stoppen, een array wordt dit.
 const details = document.querySelectorAll('footer section:first-of-type details');
