@@ -59,24 +59,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-  - Tekst word niet gelezen alleen interactieve elementen
-  - Ineteractieve elementen werd goed voorgelezen en werd verteld wat je er mee kan
+  - Tekst wordt niet gelezen alleen interactieve elementen
+  - Ineteractieve elementen wordt goed voorgelezen en wordt verteld wat je er mee kan
   - Duidelijke volgorde
 
   #### Muis en Toetsenbord 
   - Met de tap functie, krijgen knoppen een blauwe rand ook knoppen die al blauw zijn dit is niet duidelijk
   - Logische volgorde 
   - Iphone specificaties tabel gaat verticaal ipv horzontaal
-  - footnote is ook klikbaar door op enter te drukken
+  - Footnote is ook klikbaar door op enter te drukken
 
 
   #### Motoriek (shocks, elastiekjes)
-  - Was geen obstakel, kon de website gewoon gebruiken zoals normaal
+  - Is geen obstakel, kon de website gewoon gebruiken zoals normaal
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  - kleurenblind, contrast blijft goed met verschillende vormen van kleurenblindheid heb ik dit getest: Ortitanapia, Protanopia, Peuteranopie
-- bril, grote tekst is nog wel leesbaar kleine tekst valt weg. Afbeeldingen zijn nog wel zichtbaar maar niet in detail. Footer is niet te lezen.
+  - Kleurenblind, contrast blijft goed met verschillende vormen van kleurenblindheid heb ik dit getest: Ortitanapia, Protanopia, Peuteranopie
+- Bril, grote tekst is nog wel leesbaar kleine tekst valt weg. Afbeeldingen zijn nog wel zichtbaar maar niet in detail. Footer is niet te lezen.
 
 </details>
 
@@ -108,7 +108,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   Heb deze week de HTML gemaakt voor de homepagina en heb hier ook meteen de eerste CSS voor geschreven. De breakdown schets heeft me veel geholpen om de HTML te schrijven voor de homepagina. Had wel erg moeite met de plaatjes, om die goed te zetten. Daarnaast gebruik ik nog custom properties, weet namelijk niet of dit moet.
 
 
@@ -123,8 +122,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
   - De afbeeldingen hebben om het object een groot vlak zwart of wit, het best kan ik de afbeeldingen bijsnijden zodat alleen het object op de afbeelding staat.
   - Custom properties moet ik gebruiken in mijn css. Dit doe ik door een eigenschap aan te maken in de :root. Dit doe je door -- en dan de naar waarover de eigenschap gaat. Vervolgens kan je de eignschap aanroepen met “var”.
 
@@ -138,8 +135,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  Hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  Deze week ben ik aan de gang geweest met de navigatie bar. Ik heb hier gebruik gemaakt van de huiswerk opdracht, aan de hand van deze code lukte het mij om dit om te zetten voor de Apple site. Daarnaast ben ik verder gegaan om de HTML te schrijven voor de tweede pagina. Het grid voor de 4 verschillende iphone vond ik erg lastig om mee te beginnen. Ik heb er daarom voor gekozen om eerst een klein deel van het grid te maken en dit na te maken. Daarnaast liep vast hoe ik de footer moest maken met de uitklap functie en het lukt mij niet om de iphones te laten scrollen.
+  Deze week ben ik aan de gang geweest met de navigatie bar. Ik heb hier gebruik gemaakt van de huiswerk opdracht, aan de hand van deze code lukte het mij om dit om te zetten voor de Apple site. Daarnaast ben ik verder gegaan om de HTML te schrijven voor de tweede pagina. Het grid voor de 4 verschillende iphone's vond ik erg lastig om mee te beginnen. Ik heb er daarom voor gekozen om een klein deel van het grid te maken. Daarnaast liep ik vast hoe ik de footer moest maken met de uitklap functie en het lukt mij niet om de iphones te laten scrollen.
 
 
   ### Agenda voor meeting
@@ -153,10 +149,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - De student assistent heeft een 1 keer voor gedaan hoe je een detail en summary maakt in html. Ik begreep dit en ga ik verder mee voor me hele footer. 
-  - om de ul stond een section waardoor de section ging scrollen en niet de ul zelf de section heb ik hiervoor weg gehaald. Daarnaast heb ik een 	z-index: -1 moeten toevoegen anders waren de plaatjes van de li's zichtbaar in me naviagtie als je die uitklapte. De uitwerking in css:
+  - De student assistent heeft 1 keer voor gedaan hoe je een detail en summary maakt in HTML. Ik begreep dit en ga hier mee verder voor de gehele footer. 
+  - Om de ul stond een section waardoor de section ging scrollen en niet de ul zelf. De section heb ik weg gehaald, deze was namelijk overbodig. Daarnaast heb ik een z-index: -1 moeten toevoegen anders waren de plaatjes van de li's zichtbaar in me naviagtie als je die uitklapte. De uitwerking in css:
   <img src="images/css-apple-scrol-iphone.jpg" width="375px" alt="apple scroll code css">
 
 
@@ -175,19 +169,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  De screenreader werkte goed, de afbeeldingen werden niet voorgelezen maar dit lag aan de instellingen van de screenreader zelf. 
+  De screenreader werkte goed, de afbeeldingen werden niet voorgelezen, maar dit lag aan de instellingen van de screenreader zelf. 
 
 
   #### Muis en Toetsenbord 
-  Met de tab toets door de website heen werkte erg goed, het enige wat niet werd meegenomen is de scrollbar op de iphone pagina. Hier moeten nog linkjes van worden gemaakt, zodat ze wel tab baar zijn. Wat verbeterd is de kleur van  het interactieveelement wat getapt is op dat moment. Eerst was dit blauw en was het niet goed te zien bij de blauwe knoppen. De rode kleur is wel goed zichtbaar dit is dus een goede verbetering.
+  Met de tab toets door de website heen werkte erg goed, het enige wat niet werd meegenomen is de scrollbar op de iphone pagina. Hier moeten nog linkjes van worden gemaakt, zodat ze wel tab baar zijn. De kleur van  het interactieve element wat getapt is op dat moment, is verbeterd. Eerst was dit blauw en was het niet goed te zien bij de blauwe knoppen. De rode kleur is wel goed zichtbaar dit is dus een goede verbetering.
 
 
   #### Motoriek (shocks, elastiekjes)
-  Met elastiekjes werkt helemaal prima, dat zorgt niet voor problemen. 
+  Met elastiekjes om haar vingers was geen belemering.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Met de wazigheidsbril is het contrast prima en de titels zijn te lezen, maar de kleine tekst niet. Het contrast is dus wel goed. Met de kleurenblindheidsbril is alles prima te lezen, enkel worden de kleuren wat geler. Dit zorgt nergens op de hele website voor problemen, het is nu goed hoe het is. 
+  Met de wazigheidsbril is het contrast prima en de titels zijn te lezen, maar de kleine tekst niet. Het contrast is dus wel goed. Met de kleurenblindheidsbril is alles prima te lezen, alleen worden de kleuren wat geler. Dit zorgt nergens op de hele website voor problemen, het is nu goed hoe het is. 
 
 </details>
 
@@ -200,8 +194,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  Ik ben lekker bezig om me website af te maken. Heb ervoor gekozen om het bij deze content te houden en me te gaan foccussen op de content die er nu staat op de twee pagina's. Dit het ik in overleg gedaan met Robert. Deze week heb ik me vooral bezig gehouden om zoveel mogelijk content responive te maken, zoals de footer, content blokken op de homepagina en iphone pagina en ben ik verder gegaan met het grid voor de 4 verschillende iphones. 
+  Ik ben lekker bezig om de website af te maken. Heb ervoor gekozen om het bij deze content te houden en te gaan foccussen op de content die er nu staat op de twee pagina's. Dit het ik in overleg gedaan met Robert. Deze week heb ik mij vooral bezig gehouden om zoveel mogelijk content responive te maken, zoals de footer, content blokken op de homepagina en iphone pagina en ben ik verder gegaan met het grid voor de 4 verschillende iphones. 
 
   ### Agenda voor meeting
   Deze week hebben we niet met het hele groepje bij elkaar gezeten, maar konden we in de les zelfstandig werken en vragen stelen aan Robert en de student-assistenten.
@@ -214,10 +207,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - Heb hier uitendelijk voor de les zelf een oplossing voor gevonden. Ik heb dit opgelost door een @media Rule gezet op de footer en het vervolgens in een grid gezet waardoor de verschillende blokjes footer naast elkaar en onder elkaar gingen staan.
-  - Ik wist niet hoe ik de content blokken responsive kon maken, omdat aleen het plaatje laast de tekst kwam te staan. De tekst en het plaatje zaten samen allebei in de zelfe section waardoor ze geen eigen contener hadden om het vervolgens te flexbloxen. Hiervoor kreeg ik de tip om de section nog een keer op te delen in nog een section waarin alle tekst stond. Kijk hieronder voor de HTML die ik heb aangepast:
+  - Heb hier uitendelijk voor de les zelf een oplossing voor gevonden. Ik heb dit opgelost door een @media Rule te zetten op de footer en het vervolgens in een grid gezet waardoor de verschillende blokjes footer naast elkaar en onder elkaar gingen staan.
+  - Ik wist niet hoe ik de content blokken responsive kon maken, omdat aleen het plaatje naast de tekst moet komen. De tekst en het plaatje zaten samen allebei in dezelfde section waardoor ze geen eigen contener hadden om het vervolgens te flexbloxen. Hiervoor kreeg ik de tip om de section nog een keer op te delen in nog een section waarin alle tekst stond. Kijk hieronder voor de HTML die ik heb aangepast:
     <img src="images/code-blokken-responsive-html.png" width="375px" alt="code blokken responsive html">
 
 
