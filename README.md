@@ -239,13 +239,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb geleerd om met Media Queries te werken. Ik had hier voorheen nog niet mee gewerkt, maar dit ging eigenlijk best wel goed om zo de site responisive te maken. 
 
-  <img src="images/Apple-responsive-footer-nav.jpg" width="375px" alt="responsive footer en navigatie>
+  <img src="images/Apple-responsive-footer-nav.jpg" width="375px" alt="responsive footer en navigatie">
 
 
   ### Dit was lastig/Is niet gelukt:
   Wat erg lastig was was het maken van het grid voor de 4 verschillende iphones. Ik heb een klein deel gemaakt van dit grid, de rest is mij helaas niet gelukt.
 
-  <img src="images/Aplle-nietgelukt.jpg" width="375px" alt="grid 4 iphones">
+  <img src="images/Apple-nietgelukt.jpg" width="375px" alt="grid 4 iphones">
 </details>
 
 
